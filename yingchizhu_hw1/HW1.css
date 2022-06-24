@@ -1,0 +1,45 @@
+body {
+  background-color: bisque;
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgb(5, 5, 5);
+}
+.header {
+  font-weight: 300;
+  background-color: #3e1469;
+  color: aliceblue;
+}
+
+td,
+th {
+  border: 1px solid rgb(8, 7, 7);
+  padding: 8px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+#searchbar {
+  width: 40%;
+  height: 100%;
+  margin-left: 30%;
+  border-radius: 40px;
+}
+.btn {
+  margin-left: 40%;
+  display: inline-block;
+  position: relative;
+}
+ol li {
+  border: 1px solid rgb(215, 99, 99);
+  padding: 8px;
+}
+ul li {
+  border: 1px solid rgb(120, 122, 89);
+  padding: 8px;
+}
