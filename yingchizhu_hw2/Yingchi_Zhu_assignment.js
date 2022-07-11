@@ -74,14 +74,14 @@ first.forEach(function (ele) {
   if (obj != undefined) {
     ar3.push(Object.assign(obj, ele));
   } else {
-    ar3.push({ uuid: ele.uuid, name: ele.name, role: null });
+    ar3.push({ uuid: ele.uuid, role: null, name: ele.name });
   }
 });
 
 second.forEach(function (ele) {
   var obj2 = first.find((ele2) => ele2.uuid == ele.uuid);
   if (obj2 == undefined) {
-    ar3.push({ uuid: ele.uuid, name: null, role: ele.role });
+    ar3.push({ uuid: ele.uuid, role: ele.role, name: null });
   }
 });
 ar3 = ar3.sort((a, b) => a.uuid - b.uuid);
