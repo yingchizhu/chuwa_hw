@@ -49,7 +49,7 @@ splitString.forEach(function (ele) {
     emstring += " " + ele;
   }
 });
-console.log(emstring);
+console.log(emstring.toLowerCase());
 
 //Q3
 console.log(
