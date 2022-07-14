@@ -9,9 +9,7 @@ console.log(
 );
 let newArr = [];
 itemsObject.forEach(function (ele) {
-  newQua = ele.quantity * 2;
-  newPrice = ele.price * 2;
-  newArr.push({ quantity: newQua, price: newPrice });
+  newArr.push({ quantity: ele.quantity * 2, price: ele.price * 2 });
 });
 console.log(newArr);
 
@@ -42,14 +40,12 @@ console.log(
 const string =
   " Perhaps The Easiest-to-understand   Case   For Reduce Is   To Return The Sum Of  All The Elements In  An Array  ";
 
-let splitString = string.split(/[^a-z0-9]/gi);
-let emstring = "";
-splitString.forEach(function (ele) {
-  if (ele != "") {
-    emstring += " " + ele;
-  }
-});
-console.log(emstring.toLowerCase());
+let splitString = string
+  .split(/[^a-z0-9]/gi)
+  .filter((ele) => ele != "")
+  .join(" ");
+
+console.log(splitString.toLowerCase());
 
 //Q3
 console.log(
