@@ -57,7 +57,8 @@ let tblfor =
   table(tableInfo.tableContent) +
   "</table>";
 var div = document.createElement("div");
-div.innerHTML = tblfor;
+div.className = "Table";
+div.innerHTML = tblfor.replace(/[,]/gi, "");
 
 document.body.append(div);
 
